@@ -1,0 +1,111 @@
+import warnings #Nicht entfernen (frag' nicht warum)
+import sys #Selbe Story
+import streamlit as st
+import pandas as pd
+import plotly.graph_objects as go
+
+
+@st.cache_data
+def plot_arbeitslos_total(path, title, filtered_df, key):
+    arbeitslos = pd.read_csv(rf"amir_graphs\{path}", delimiter=",")
+    arbeitslos = arbeitslos[arbeitslos["Jahr"].isin(filtered_df['Jahr'])]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=arbeitslos["Jahr"], y=arbeitslos["Insgesamt"],
+        mode="lines+markers", name="Insgesamt",
+        showlegend=True,
+        line=dict(color="#E66C37", width=3),
+        marker=dict(size=8),
+        hovertemplate="<b>Jahr:</b> %{x}<br><b>Wert:</b> %{y:,}<extra></extra>"
+))
+
+    fig.update_layout(
+        # title=f"📊 {title}",
+        xaxis=dict(title="Jahr", showgrid=True, tickmode="linear", dtick=1, range=[2010, 2024], gridcolor="lightgray", griddash="dot"),
+        yaxis=dict(title="Anzahl", showgrid=True, gridcolor="lightgray", griddash="dot", tickformat=",d"),
+        hoverlabel=dict(bgcolor="black", font_size=13, font_color="white"),
+        legend=dict(title="Altersgruppen")
+    )
+
+    st.plotly_chart(fig, use_container_width=True, key=key)
+
+@st.cache_data
+def plot_arbeitslos_group(path, title, filtered_df, key):
+    arbeitslos = pd.read_csv(rf"amir_graphs\{path}", delimiter=",")
+    arbeitslos = arbeitslos[arbeitslos["Jahr"].isin(filtered_df['Jahr'])]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+            x=arbeitslos["Jahr"], y=arbeitslos["Junge Erwachsene 20-24"],
+            mode="lines+markers", name="Junge Erwachsene 20-24",
+            line=dict(color="#12239E", width=2),
+            marker=dict(size=6),
+            fill='tozeroy',
+            fillcolor='rgba(105, 105, 105, 0.4)', 
+            hovertemplate="<b>Jahr:</b> %{x}<br><b>Wert:</b> %{y:,}<extra></extra>"
+        ))
+    fig.add_trace(go.Scatter(
+            x=arbeitslos["Jahr"], y=arbeitslos["Jugendliche unter 20 Jahre"],
+            mode="lines+markers", name="Jugendliche unter 20 Jahre",
+            line=dict(color="#04106D", width=2),
+            marker=dict(size=6),
+            fill='tozeroy',
+            fillcolor='rgba(211, 211, 211, 0.2)', 
+            hovertemplate="<b>Jahr:</b> %{x}<br><b>Wert:</b> %{y:,}<extra></extra>"
+        ))
+    fig.add_trace(go.Scatter(
+        x=arbeitslos["Jahr"], y=arbeitslos["Insgesamt"],
+        mode="lines+markers", name="Insgesamt",
+        line=dict(color="#E66C37", width=3),
+        marker=dict(size=8),
+        fill='tozeroy',
+        fillcolor='rgba(128, 128, 128, 0.1)',
+        hovertemplate="<b>Jahr:</b> %{x}<br><b>Wert:</b> %{y:,}<extra></extra>"
+))
+
+    fig.update_layout(
+        # title=f"📊 {title}",
+        xaxis=dict(title="Jahr", showgrid=True, tickmode="linear", dtick=1, range=[2010, 2024], gridcolor="lightgray", griddash="dot"),
+        yaxis=dict(title="Anzahl", showgrid=True, gridcolor="lightgray", griddash="dot", tickformat=",d"),
+        hoverlabel=dict(bgcolor="black", font_size=13, font_color="white"),
+        legend=dict(title="Altersgruppen")
+    )
+
+    st.plotly_chart(fig, use_container_width=True, key=key)
+
+
+@st.cache_data
+def plot_arbeitslos_group_25(path, title, filtered_df, key):
+    arbeitslos = pd.read_csv(rf"amir_graphs\{path}", delimiter=",")
+    arbeitslos = arbeitslos[arbeitslos["Jahr"].isin(filtered_df['Jahr'])]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+            x=arbeitslos["Jahr"], y=arbeitslos["Jüngere unter 25 Jahre"],
+            mode="lines+markers", name="Jüngere unter 25 Jahre",
+            line=dict(color="#D64550", width=2),
+            marker=dict(size=6),
+            fill='tozeroy',
+            fillcolor='rgba(128, 128, 128, 0.4)', 
+            hovertemplate="<b>Jahr:</b> %{x}<br><b>Wert:</b> %{y:,}<extra></extra>"
+        ))
+    fig.add_trace(go.Scatter(
+        x=arbeitslos["Jahr"], y=arbeitslos["Insgesamt"],
+        mode="lines+markers", name="Insgesamt",
+        line=dict(color="#E66C37", width=3),
+        marker=dict(size=8),
+        fill='tozeroy',  
+        fillcolor='rgba(128, 128, 128, 0.1)',
+        hovertemplate="<b>Jahr:</b> %{x}<br><b>Wert:</b> %{y:,}<extra></extra>"
+))
+
+    fig.update_layout(
+        # title=f"📊 {title}",
+        xaxis=dict(title="Jahr", showgrid=True, tickmode="linear", dtick=1, range=[2010, 2024], gridcolor="lightgray", griddash="dot"),
+        yaxis=dict(title="Anzahl", showgrid=True, gridcolor="lightgray", griddash="dot", tickformat=",d"),
+        hoverlabel=dict(bgcolor="black", font_size=13, font_color="white"),
+        legend=dict(title="Altersgruppen")
+    )
+
+    st.plotly_chart(fig, use_container_width=True, key=key)
