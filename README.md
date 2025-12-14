@@ -1,5 +1,7 @@
 # Die Zukunft der Jugend: Trends in Bildung, Beschäftigung und mentaler Gesundheit
 
+![Die Zukunft der Jugend](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
+
 📌 **Entwickelt von Büsra Yilmaz, Mila Böhm und Amir Argani**
 
 ## 📊 Streamlit Data App
