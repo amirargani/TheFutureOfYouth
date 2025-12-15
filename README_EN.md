@@ -1,4 +1,4 @@
-# The Future of Youth: Trends in Education, Employment, and Mental Health
+# The Future of Youth: Trends in Education, Employment and Mental Health
 
 ![The Future of Youth](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
 
