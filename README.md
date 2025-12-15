@@ -97,7 +97,7 @@ src/
 
 ---
 
-#### 📂 **Bereinigte Daten/**
+#### 📂 **Bereinigte_Daten/**
 
 * Enthält **vorverarbeitete und bereinigte Datensätze**
 * Schritte umfassen z. B.:

@@ -117,7 +117,7 @@ src/
 
 ---
 
-#### 📂 **Bereinigte Daten/** (Cleaned Data)
+#### 📂 **Bereinigte_Daten/** (Cleaned Data)
 
 * Contains **preprocessed and cleaned datasets**
 * Processing steps include, for example:
