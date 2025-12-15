@@ -2,6 +2,8 @@
 
 ![Die Zukunft der Jugend](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
 
+#### 🇬🇧 English: [README_EN.md](README_EN.md)
+
 📌 **Entwickelt von Büsra Yilmaz, Mila Böhm und Amir Argani**
 
 ## 📊 Streamlit Data App
@@ -69,8 +71,61 @@ streamlit run streamlit_app.py
 - 🧠 ML-Modelle mit Scikit-learn  
 - 🌐 Web-App mit Streamlit  
 
-### 🛠️ `config.toml`: readme_config.md
+### 🛠️ `config.toml`: [`readme_config.md`](readme_config.md)
 
+---
+
+## 📁 `src/` – Projektstruktur & Inhalte
+
+Der Ordner **`src/`** enthält alle projektbezogenen Ressourcen wie Rohdaten, aufbereitete Daten, Design-Dateien und Visualisierungen, die für Analyse, Modellierung und Präsentation verwendet werden.
+
+### 📂 Ordnerübersicht
+
+```text
+src/
+├── Bereinigte Daten/
+├── Rohdaten/
+├── PowerBI/
+└── PSD/
+```
+
+### 📄 Detailbeschreibung der Inhalte
+
+#### 📂 **Rohdaten/**
+
+* Enthält **unveränderte Originaldatensätze** (z. B. CSV-Dateien)
+
+---
+
+#### 📂 **Bereinigte Daten/**
+
+* Enthält **vorverarbeitete und bereinigte Datensätze**
+* Schritte umfassen z. B.:
+
+  * Entfernen fehlender oder fehlerhafter Werte
+  * Umbenennung von Spalten
+  * Typkonvertierungen
+
+---
+
+#### 📂 **PowerBI/**
+
+* Beinhaltet **PowerBI-Dateien (.pbix)**
+* Dienen zur:
+
+  * Explorativen Datenanalyse
+  * Erstellung von Dashboards
+  * Vergleich mit Streamlit-Visualisierungen
+
+---
+
+#### 📂 **PSD/**
+
+* Enthält **Design- und Layout-Dateien** (z. B. Photoshop `.psd`)
+* Verwendung für:
+
+  * Projektgrafiken
+ 
 ---
 
 ## 📅 Changelog  
