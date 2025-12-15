@@ -2,7 +2,7 @@
 
 ![Die Zukunft der Jugend](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
 
-#### 🇬🇧 English: [README_EN.md](README_EN.md)
+#### 🇺🇸 English: [README_EN.md](README_EN.md)
 
 📌 **Entwickelt von Büsra Yilmaz, Mila Böhm und Amir Argani**
 
