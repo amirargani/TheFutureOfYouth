@@ -101,7 +101,7 @@ The **`src/`** folder contains all project-related resources such as raw data, p
 
 ```text
 src/
-├── Bereinigte Daten/
+├── Bereinigte_Daten/
 ├── Rohdaten/
 ├── PowerBI/
 └── PSD/

@@ -83,7 +83,7 @@ Der Ordner **`src/`** enthält alle projektbezogenen Ressourcen wie Rohdaten, au
 
 ```text
 src/
-├── Bereinigte Daten/
+├── Bereinigte_Daten/
 ├── Rohdaten/
 ├── PowerBI/
 └── PSD/
