@@ -92,4 +92,4 @@ Unser Projekt nutzt **Scikit-learn**, um Vorhersagen im Bereich der Jugendarbeit
 - 📓 **Jupyter:** Dokumentation der Indikatoren-Berechnung.
 
 ---
-© 2025 – Die Zukunft der Jugend Projekt Team
+© 2025 – Entwickelt von: Büsra Yilmaz, Mila Böhm & Amir Argani

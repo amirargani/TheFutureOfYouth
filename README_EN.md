@@ -92,4 +92,4 @@ Our project uses **Scikit-learn** to make predictions in the area of youth unemp
 - 📓 **Jupyter:** Documentation of indicator calculations.
 
 ---
-© 2025 – The Future of Youth Project Team
+© 2025 – Developed by: Büsra Yilmaz, Mila Böhm & Amir Argani
