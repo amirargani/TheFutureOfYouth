@@ -1,50 +1,50 @@
-### 🛠️ Finding or Creating `config.toml` on Windows
+# 🛠️ Streamlit Configuration Guide
 
-#### 🔍 File Path
-
-* **Windows:**
-  `C:\Users\<username>\.streamlit\config.toml`
-* **macOS / Linux:**
-  `~/.streamlit/config.toml`
-
-#### 📍 Quick Access via File Explorer
-
-```plaintext
-%userprofile%\.streamlit
-```
-
-If the file already exists, you will find `config.toml` there.
+This guide explains how to set up the `config.toml` for this project to ensure the correct theme and UI settings.
 
 ---
 
-### 📄 File or Folder Missing?
+### 🔍 Locate the File
 
-#### 🧱 Create Manually
+The configuration file is typically located in your operating system's profile directory:
 
-1. In File Explorer, navigate to
-   `C:\Users\<username>\`
+| OS | Default Path |
+| :--- | :--- |
+| **Windows** | `C:\Users\<Name>\.streamlit\config.toml` |
+| **macOS / Linux** | `~/.streamlit/config.toml` |
 
-2. Create a new folder named:
-   `.streamlit`
-   *(A leading dot is allowed.)*
+> [!TIP]
+> On Windows, you can enter `%userprofile%\.streamlit` directly into the Explorer address bar to jump to the folder.
 
-3. Open a text editor (e.g., Notepad) and insert:
+---
 
-   ```toml
-   [theme]
-   base = "light"
-   ```
+### 📄 Create File (if missing)
 
-4. Save the file as:
-   `config.toml`
-   inside the `.streamlit` folder.
+If the folder or file is missing, follow these steps:
+
+1. **Create Folder:** Navigate to your user directory and create a new folder named `.streamlit`.
+2. **Create File:** Inside the `.streamlit` folder, create a new text file named `config.toml`.
+3. **Insert Content:** Copy the following block into the file:
+
+```toml
+[theme]
+base = "light"
+primaryColor = "#FF4B4B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#31333F"
+font = "sans serif"
+```
 
 ---
 
 ### ✅ Test the Configuration
 
-Start the Streamlit app:
+Restart the app to verify that the settings have been applied:
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
+
+> [!NOTE]
+> The `config.toml` controls the primary appearance of the app. If the visualizations are optimized for Light Mode, the `base = "light"` setting is mandatory.

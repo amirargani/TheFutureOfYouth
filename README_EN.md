@@ -1,167 +1,95 @@
 # The Future of Youth: Trends in Education, Employment and Mental Health
 
-![The Future of Youth](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
+![The Future of Youth Header](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
 
-#### 🇩🇪 German: [README.md](README.md)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.50-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green?style=for-the-badge)](LICENSE.txt)
 
-📌 **Developed by Büsra Yilmaz, Mila Böhm, and Amir Argani**
-
-## 📊 Streamlit Data App
-
-An interactive data analysis tool built with **Streamlit**, **Pandas**, **NumPy**, **Plotly**, and **Scikit-learn**.
+#### 🇩🇪 German Version: [README.md](README.md)
 
 ---
 
-### 🚀 Installation
+## 🌟 Project Overview
+
+This project is an interactive data analysis application that highlights the current challenges and trends of youth in Germany. We focus on the core areas of **Education**, **Labor Market**, and **Mental Health**.
+
+📌 **Developed by:** Büsra Yilmaz, Mila Böhm & Amir Argani
+
+---
+
+## 📊 The Streamlit App
+
+Our application provides deep insights through interactive visualizations and machine learning models.
+
+### 🛠️ Tech Stack
+- **Frontend/Backend:** [Streamlit](https://streamlit.io/)
+- **Data Processing:** [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
+- **Visualization:** [Plotly](https://plotly.com/python/)
+- **Machine Learning:** [Scikit-learn](https://scikit-learn.org/)
+
+---
+
+### 🚀 Installation & Setup
 
 1. **Clone the repository**
-
    ```bash
    git clone https://github.com/amirargani/Die_Zukunft_der_Jugend.git
+   cd Die_Zukunft_der_Jugend
    ```
 
-2. **Check Python version**
-   This project was developed using **Python 3.11.0**.
-
+2. **Environment Check**
+   Recommended version: **Python 3.11.0**
    ```bash
    python --version
    ```
 
 3. **Install dependencies**
-
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Python packages**
+4. **Adjust Configuration**
+   Information regarding `config.toml` can be found here: 📄 [readme_config_en.md](readme_config_en.md)
 
-   ```markdown
-   | Package Name   | Version |
-   |----------------|---------|
-   | streamlit      | 1.50.0  |
-   | pandas         | 2.3.3   |
-   | numpy          | 2.3.4   |
-   | plotly         | 6.3.1   |
-   | scikit-learn   | 1.7.2   |
-   ```
-
-5. **Verify installed versions**
-
-   ```bash
-   pip show streamlit
-   pip show pandas
-   pip show numpy
-   pip show plotly
-   pip show scikit-learn
-   ```
-
----
-
-### 🧪 Requirements (`requirements.txt`)
-
-```txt
-streamlit==1.50.0
-pandas==2.3.3
-numpy==2.3.4
-plotly==6.3.1
-scikit-learn==1.7.2
-```
-
----
-
-### ▶️ Run the Application
-
+### ▶️ Run the App
 ```bash
 streamlit run streamlit_app.py
 ```
 
 ---
 
-### 🛠️ Features
+## 📂 Project Structure & `src/` Contents
 
-* 📈 Interactive visualizations with Plotly
-* 📊 Data analysis using Pandas & NumPy
-* 🧠 Machine learning models with Scikit-learn
-* 🌐 Web application built with Streamlit
-
----
-
-### 🛠️ `config.toml`
-
-Configuration details are documented here:
-📄 [`readme_config_en.md`](readme_config_en.md)
-
----
-
-## 📁 `src/` – Project Structure & Contents
-
-The **`src/`** folder contains all project-related resources such as raw data, processed datasets, design files, and visualizations used for analysis, modeling, and presentation.
-
-### 📂 Folder Overview
+The `src/` folder is at the heart of our data management.
 
 ```text
 src/
-├── Bereinigte_Daten/
-├── Rohdaten/
-├── PowerBI/
-└── PSD/
+├── Rohdaten/           # Unaltered original datasets (CSV)
+├── Bereinigte_Daten/   # Preprocessed & cleaned data for the app
+├── PowerBI/            # .pbix files for dashboards & comparisons
+└── PSD/                # Design resources (Photoshop layouts)
 ```
 
----
-
-### 📄 Detailed Folder Description
-
-#### 📂 **Rohdaten/** (Raw Data)
-
-* Contains **unaltered original datasets** (e.g., CSV files)
+### Data Pipeline
+- **Cleaning:** Removing outliers, handling missing values, column mapping.
+- **Analysis:** Statistical evaluations on education trends.
+- **Visualization:** Dynamic graphs showing developments over time.
 
 ---
 
-#### 📂 **Bereinigte_Daten/** (Cleaned Data)
-
-* Contains **preprocessed and cleaned datasets**
-* Processing steps include, for example:
-
-  * Removing missing or invalid values
-  * Renaming columns
-  * Data type conversions
-
----
-
-#### 📂 **PowerBI/**
-
-* Contains **Power BI files (.pbix)**
-* Used for:
-
-  * Exploratory data analysis
-  * Dashboard creation
-  * Comparison with Streamlit visualizations
-
----
-
-#### 📂 **PSD/**
-
-* Contains **design and layout files** (e.g., Photoshop `.psd`)
-* Used for:
-
-  * Project graphics
+## 🧠 Machine Learning Focus
+Our project uses **Scikit-learn** to make predictions in the area of youth unemployment and to analyze correlations between various life spheres.
 
 ---
 
 ## 📅 Changelog
 
-### V.2025.10.31.0 (October 31, 2025)
+### V.2025.10.31.0
+- ✨ **Modules:** New deep-dives for Education, Labor Market, and Health.
+- 🤖 **ML:** Integration of models for unemployment prediction.
+- 📈 **Graphs:** Expansion of Plotly dashboards.
+- 📓 **Jupyter:** Documentation of indicator calculations.
 
-* **Modules**
-
-  * Education
-  * Labor Market
-  * Mental Health
-* **Machine Learning**
-
-  * Unemployment
-* **CSV**
-
-  * Charts
-
-    * Jupyter notebooks for indicators
+---
+© 2025 – The Future of Youth Project Team

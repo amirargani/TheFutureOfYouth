@@ -1,142 +1,95 @@
 # Die Zukunft der Jugend: Trends in Bildung, Beschäftigung und mentaler Gesundheit
 
-![Die Zukunft der Jugend](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
+![Die Zukunft der Jugend Header](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
 
-#### 🇺🇸 English: [README_EN.md](README_EN.md)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.50-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green?style=for-the-badge)](LICENSE.txt)
 
-📌 **Entwickelt von Büsra Yilmaz, Mila Böhm und Amir Argani**
+#### 🇺🇸 English Version: [README_EN.md](README_EN.md)
 
-## 📊 Streamlit Data App
+---
 
-Ein interaktives Datenanalyse-Tool mit **Streamlit**, **Pandas**, **NumPy**, **Plotly** und **Scikit-learn**.
+## 🌟 Projektübersicht
 
-### 🚀 Installation
+Dieses Projekt ist eine interaktive Datenanalyse-App, die die aktuellen Herausforderungen und Trends der Jugend in Deutschland beleuchtet. Wir konzentrieren uns dabei auf die Kernbereiche **Bildung**, **Arbeitsmarkt** und **psychische Gesundheit**.
 
-1. **Repository klonen**  
+📌 **Entwickelt von:** Büsra Yilmaz, Mila Böhm & Amir Argani
+
+---
+
+## 📊 Die Streamlit App
+
+Unsere Anwendung bietet tiefgehende Einblicke durch interaktive Visualisierungen und Machine-Learning-Modelle.
+
+### 🛠️ Tech Stack
+- **Frontend/Backend:** [Streamlit](https://streamlit.io/)
+- **Datenverarbeitung:** [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
+- **Visualisierung:** [Plotly](https://plotly.com/python/)
+- **Machine Learning:** [Scikit-learn](https://scikit-learn.org/)
+
+---
+
+### 🚀 Installation & Setup
+
+1. **Repository klonen**
    ```bash
    git clone https://github.com/amirargani/Die_Zukunft_der_Jugend.git
+   cd Die_Zukunft_der_Jugend
    ```
 
-2. **Python-Version prüfen**  
-   Dieses Projekt wurde mit **Python 3.11.0** entwickelt.  
+2. **Umgebung prüfen**
+   Empfohlene Version: **Python 3.11.0**
    ```bash
    python --version
    ```
 
-3. **Abhängigkeiten installieren**  
+3. **Abhängigkeiten installieren**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Python-Pakete**
-   ```markdown
-   | Paketname      | Version   |
-   |----------------|-----------|
-   | streamlit      | 1.50.0    |
-   | pandas         | 2.3.3     |
-   | numpy          | 2.3.4     |
-   | plotly         | 6.3.1     |
-   | scikit-learn   | 1.7.2     |
-   ```
+4. **Konfiguration anpassen**
+   Informationen zur `config.toml` findest du hier: 📄 [readme_config.md](readme_config.md)
 
-5. **Version prüfen**
-   ```bash
-   pip show streamlit
-   pip show pandas
-   pip show numpy
-   pip show plotly
-   pip show scikit-learn
-   ```
-
-### 🧪 Anforderungen (`requirements.txt`)
-
-```txt
-streamlit==1.50.0
-pandas==2.3.3
-numpy==2.3.4
-plotly==6.3.1
-scikit-learn==1.7.2
-```
-
-### ▶️ Anwendung starten
-
+### ▶️ App starten
 ```bash
 streamlit run streamlit_app.py
 ```
 
-### 🛠️ Features
-
-- 📈 Interaktive Visualisierungen mit Plotly  
-- 📊 Datenanalyse mit Pandas & NumPy  
-- 🧠 ML-Modelle mit Scikit-learn  
-- 🌐 Web-App mit Streamlit  
-
-### 🛠️ `config.toml`: [`readme_config.md`](readme_config.md)
-
 ---
 
-## 📁 `src/` – Projektstruktur & Inhalte
+## � Projektstruktur & `src/` Inhalte
 
-Der Ordner **`src/`** enthält alle projektbezogenen Ressourcen wie Rohdaten, aufbereitete Daten, Design-Dateien und Visualisierungen, die für Analyse, Modellierung und Präsentation verwendet werden.
-
-### 📂 Ordnerübersicht
+Der `src/` Ordner bildet das Herzstück unseres Datenmanagements.
 
 ```text
 src/
-├── Bereinigte_Daten/
-├── Rohdaten/
-├── PowerBI/
-└── PSD/
+├── Rohdaten/           # Unveränderte Originaldatensätze (CSV)
+├── Bereinigte_Daten/   # Vorverarbeitete & gesäuberte Daten für die App
+├── PowerBI/            # .pbix Dateien für Dashboards & Vergleiche
+└── PSD/                # Design-Ressourcen (Photoshop Layouts)
 ```
 
-### 📄 Detailbeschreibung der Inhalte
-
-#### 📂 **Rohdaten/**
-
-* Enthält **unveränderte Originaldatensätze** (z. B. CSV-Dateien)
-
----
-
-#### 📂 **Bereinigte_Daten/**
-
-* Enthält **vorverarbeitete und bereinigte Datensätze**
-* Schritte umfassen z. B.:
-
-  * Entfernen fehlender oder fehlerhafter Werte
-  * Umbenennung von Spalten
-  * Typkonvertierungen
+### Daten-Pipeline
+- **Bereinigung:** Entfernen von Outliern, Handling von Missing Values, Spalten-Mapping.
+- **Analyse:** Statistische Auswertungen zu Bildungstrends.
+- **Visualisierung:** Dynamische Graphen, die den Zeitverlauf verdeutlichen.
 
 ---
 
-#### 📂 **PowerBI/**
-
-* Beinhaltet **PowerBI-Dateien (.pbix)**
-* Dienen zur:
-
-  * Explorativen Datenanalyse
-  * Erstellung von Dashboards
-  * Vergleich mit Streamlit-Visualisierungen
+## 🧠 Machine Learning Fokus
+Unser Projekt nutzt **Scikit-learn**, um Vorhersagen im Bereich der Jugendarbeitslosigkeit zu treffen und Zusammenhänge zwischen den verschiedenen Lebensbereichen zu analysieren.
 
 ---
 
-#### 📂 **PSD/**
+## 📅 Changelog
 
-* Enthält **Design- und Layout-Dateien** (z. B. Photoshop `.psd`)
-* Verwendung für:
+### V.2025.10.31.0
+- ✨ **Module:** Neue Deep-Dives für Bildung, Arbeitsmarkt und Gesundheit.
+- 🤖 **ML:** Integration von Modellen zur Arbeitslosigkeit-Vorhersage.
+- 📈 **Graphs:** Erweiterung der Plotly-Dashboards.
+- 📓 **Jupyter:** Dokumentation der Indikatoren-Berechnung.
 
-  * Projektgrafiken
- 
 ---
-
-## 📅 Changelog  
-### V.2025.10.31.0 (31. Oktober 2025)
-
-- **Module**
-  - Bildung
-  - Arbeitsmarkt
-  - Psychische Gesundheit
-- **ML**
-  - Arbeitslosigkeit
-- **CSV**
-  - Graphen
-    - Jupyter für Indikatoren
+© 2025 – Die Zukunft der Jugend Projekt Team
