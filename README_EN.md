@@ -2,9 +2,9 @@
 
 ![The Future of Youth Header](https://github.com/amirargani/Die_Zukunft_der_Jugend/blob/main/src/Die_Zukunft_der_Jugend.png)
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-D22128?style=for-the-badge&logo=apache)](LICENSE.txt)
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.50-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-Apache_2.0-green?style=for-the-badge)](LICENSE.txt)
 
 #### 🇩🇪 German Version: [README.md](README.md)
 
