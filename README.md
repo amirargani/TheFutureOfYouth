@@ -34,8 +34,8 @@ Unsere Anwendung bietet tiefgehende Einblicke durch interaktive Visualisierungen
 
 1. **Repository klonen**
    ```bash
-   git clone https://github.com/amirargani/Die_Zukunft_der_Jugend.git
-   cd Die_Zukunft_der_Jugend
+   git clone https://github.com/amirargani/TheFutureOfYouth.git
+   cd TheFutureOfYouth
    ```
 
 2. **Umgebung prüfen**
